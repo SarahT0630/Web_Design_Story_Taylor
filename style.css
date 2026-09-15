@@ -279,7 +279,8 @@ h3 {
     text-align: center;
     color: #2AED36;
     font-size: 12rem;
-    font-family: "Orbitron", sans-serif
+    font-family: "Orbitron", sans-serif;
+    line-height: 10rem;
 }
 
 #liveChat {
