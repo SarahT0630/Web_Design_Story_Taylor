@@ -1,3 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Iceland&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Odibee+Sans&family=Orbitron:wght@400..900&family=Quantico:wght@400;700&display=swap');
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Increase line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*CSS reset*/
+/*FONTS*/
+
+.quantico-regular {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quantico-bold {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.iceland-regular {
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.odibee-sans-regular {
+    font-family: "Odibee Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.allerta-stencil-regular {
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.orbitron {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cascadia-code {
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*END OF FONTS*/
+
+
 html {
     background-color: #c9d184;
 }
@@ -5,5 +142,100 @@ html {
 .hero-background {
     width: 100%;
     height: 100%;
+    min-height: 100vh;
     background-color: #17182e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Opening {
+    text-align: center;
+    color: #ffffff;
+    font-size: 12rem;
+    font-family: "Quantico", sans-serif;
+}
+
+#Title {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #17182E;
+    /*CSS Gradient.io*/
+    background: linear-gradient(180deg, rgba(23, 24, 46, 1) 0%, rgba(5, 60, 105, 1) 36%, rgba(205, 224, 239, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4rem;
+    font-family: "Quantico", sans-serif;
+}
+
+h3 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: "Quantico", sans-serif;
+}
+
+#Dialouge {
+    background: #CDE0EF;
+    background: linear-gradient(180deg, rgba(205, 224, 239, 1) 38%, rgba(23, 24, 46, 1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+#momBubble {
+    padding: 0.65rem 1rem;
+    border-radius: 1.1rem;
+    max-width: 70%;
+    margin: 0.5rem 1rem;
+    align-self: flex-start;
+    border-bottom-left-radius: 0.3rem;
+    background: #F2B82A;
+    color: #17182E;
+    font-family: "Allerta Stencil", sans-serif;
+}
+
+#minkBubble {
+    padding: 0.65rem 1rem;
+    border-radius: 1.1rem;
+    max-width: 70%;
+    margin: 0.5rem 1rem;
+    align-self: flex-end;
+    border-bottom-right-radius: 0.3rem;
+    background: #17182E;
+    color: #E69727;
+    font-family: "Orbitron", sans-serif
+}
+
+#minkBubble2 {
+    padding: 0.65rem 1rem;
+    border-radius: 1.1rem;
+    max-width: 70%;
+    margin: 0.5rem 1rem;
+    align-self: flex-start;
+    border-bottom-left-radius: 0.3rem;
+    background: #17182E;
+    color: #E69727;
+    font-family: "Orbitron", sans-serif
+}
+
+#kidBubble {
+    padding: 0.65rem 1rem;
+    border-radius: 1.1rem;
+    max-width: 70%;
+    margin: 0.5rem 1rem;
+    align-self: flex-end;
+    border-bottom-right-radius: 0.3rem;
+    background: #F2B82A;
+    color: #17182E;
+    font-family: "Orbitron", sans-serif
 }
