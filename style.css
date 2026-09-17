@@ -199,7 +199,7 @@ h3 {
     font-family: "Odibee Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: 1.5rem 1rem;
+    margin: 1rem 4rem;
 
 }
 
@@ -207,7 +207,7 @@ h3 {
     padding: 0.65rem 1rem;
     border-radius: 1.1rem;
     max-width: 70%;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 6rem;
     align-self: flex-start;
     border-bottom-left-radius: 0.3rem;
     background: #F2B82A;
@@ -219,7 +219,7 @@ h3 {
     padding: 0.65rem 1rem;
     border-radius: 1.1rem;
     max-width: 70%;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 6rem;
     align-self: flex-end;
     border-bottom-right-radius: 0.3rem;
     background: #17182E;
@@ -231,7 +231,7 @@ h3 {
     padding: 0.65rem 1rem;
     border-radius: 1.1rem;
     max-width: 70%;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 6rem;
     align-self: flex-start;
     border-bottom-left-radius: 0.3rem;
     background: #17182E;
@@ -243,7 +243,7 @@ h3 {
     padding: 0.65rem 1rem;
     border-radius: 1.1rem;
     max-width: 70%;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 6rem;
     align-self: flex-end;
     border-bottom-right-radius: 0.3rem;
     background: #F2B82A;
@@ -309,4 +309,8 @@ h3 {
 
 #end p {
     margin: 3rem 3rem;
+}
+
+.prompt {
+    opacity: 0.5;
 }
